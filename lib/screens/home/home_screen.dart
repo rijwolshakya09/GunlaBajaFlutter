@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gunla_baja_flutter/core/constants/colors/colors.dart';
 
-import '../../core/constants/colors/colors.dart';
 import '../../core/widgets/appbar/custom_app_bar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Container(
           padding: const EdgeInsets.all(8.0),
           height: MediaQuery.of(context).size.height,
+          color: cCreamyBrown,
           child: const SingleChildScrollView(
             child: Column(
               children: [

@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 
 import '../../core/constants/colors/colors.dart';
 import '../../core/constants/images/images.dart';
+import '../../core/layout/layout.dart';
 import '../home/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
       const Duration(seconds: 3),
       () {
-        Get.off(() => const HomeScreen());
+        Get.off(() => const LayoutScreen(initalIndex: 0));
         // if (isLoggedIn == true) {
         //   Get.off(() => const LayoutScreen(initalIndex: 0));
         //   // NavigationUtils.navigateToGivenScreen(context, '/layout');
